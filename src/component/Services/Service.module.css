@@ -1,0 +1,51 @@
+.service_con{
+    height: 600px;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+
+    & .service_title{
+        margin-top: 60px;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    & .service_list{
+        margin-top: 110px;
+        display: flex;
+        justify-content: center;
+
+        & .service_items{
+            width: 250px;
+            margin: 0 50px;
+            & svg{
+             width: 80px;
+             height: 80px;
+             color: #0085ff;
+            }
+            & h4{
+                color: #0085ff;;
+                font-size: 24px;
+                font-weight: bold;
+                margin: 25px 0;
+            }
+        }
+
+      
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .service_con{
+        height: auto;
+        & .service_list{
+            flex-direction: column;
+            margin: 50px 0;
+            & .service_items{
+                width: 100%;
+                margin: 20px 0;
+                padding: 20px;
+            }
+        }
+    }
+}

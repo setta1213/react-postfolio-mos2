@@ -1,0 +1,71 @@
+.hero_wrapper{
+    height: 500px;
+    overflow: hidden;
+    & .container{
+        max-width: 1170px;
+        margin: 0 auto;
+      
+    }
+    & .hero_con{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 115px;
+        
+        & .text_1{
+               font-size: 32px;
+        }
+        & .text_2{
+         font-size: 64px;
+         font-weight: bold;
+         color: #0085FF;
+
+        }
+        & .text_3{
+            font-size: 32px;
+
+        }
+        & .text_4{
+            font-size: 16px;
+            margin-top: 25px;
+            width: 75%;
+        }
+        & .hero_social{
+            display: flex;
+            list-style: none;
+            margin-top: 25px;
+            & li {
+                margin-right: 10px;
+                & svg{
+                    width: 32px;
+                    height: 32px;
+                    color: black;
+                }
+            }
+        }
+        & .hero_img{
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background-image: url('https://scontent.fkdt3-1.fna.fbcdn.net/v/t39.30808-6/415566952_7109187675794296_1454312610317009140_n.jpg?stp=cp6_dst-jpg&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEkEyvzR4Hb6Wb2KIYQDnDarKsRLM7vpLusqxEszu-kuxtuif2ND_RAdqERju5C-7y3GdXm4XqHizbpTamGbUXT&_nc_ohc=GxwytL13UqoQ7kNvgE-EYQW&_nc_ht=scontent.fkdt3-1.fna&oh=00_AYAV2Z4xx_Sa7kTrBjofV7bdldxsgz6QPhEPwFTLaaEAow&oe=66B689CE');
+            background-position: center;
+            background-size: cover;
+            margin-right: 120px;
+        }
+    }
+}
+@media screen and (max-width:480px) {
+    .hero_wrapper{
+        height: auto;
+
+        & .hero_con{
+            flex-direction: column;
+            margin: 50px 0;
+            padding: 20px;
+
+            & .hero_info, & .hero_img{
+                width: 100%;
+            }
+        }
+    }
+    
+}
