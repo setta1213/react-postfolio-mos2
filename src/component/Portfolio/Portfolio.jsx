@@ -1,65 +1,71 @@
 import React from "react";
 import styles from "./Portfolio.module.css";
 import Tilt from "react-parallax-tilt";
+import bookimg from "./image/Screenshot 2024-08-06 023028.jpg"
+import dormitoryimg from"./image/dormitory.jpg"
+import serverimg from"./image/IMG_8698.jpg"
+import broadimg from"./image/IMG_6538.jpg"
+import cctvimg from"./image/cctv.jpg"
+import appimg from"./image/apple.jpg"
 function Portfolio() {
   return (
     <div className={styles.port_con}>
-      <h3 className={styles.port_title}>Portfolio</h3>
+      <h3 className={styles.port_title}>ผลงาน</h3>
       <div className={styles.port_list}>
         <div className={styles.port_items}>
           <Tilt scale={1.1} transitionSpeed={2500} tiltReverse={true}>
             <img
-              src="https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+              src={bookimg}
               alt=""
             />
           </Tilt>
-          <p>Project Title</p>
+          <p>ระบบจองห้องพักนักศึกษา</p>
         </div>
         <div className={styles.port_items}>
           <Tilt scale={1.1} transitionSpeed={2500} tiltReverse={true}>
             <img
-              src="https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+              src={dormitoryimg}
               alt=""
             />
           </Tilt>
-          <p>Project Title</p>
+          <p>ระบบแจ้งซ่อม</p>
         </div>
         <div className={styles.port_items}>
           <Tilt scale={1.1} transitionSpeed={2500} tiltReverse={true}>
             <img
-              src="https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+              src={appimg}
               alt=""
             />
           </Tilt>
-          <p>Project Title</p>
+          <p>ทำแอฟ ลง ios</p>
         </div>
         <div className={styles.port_items}>
           <Tilt scale={1.1} transitionSpeed={2500} tiltReverse={true}>
             <img
-              src="https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+              src={serverimg}
               alt=""
             />
           </Tilt>
-          <p>Project Title</p>
+          <p>setup ระบบ</p>
         </div>
         <div className={styles.port_items}>
           <Tilt scale={1.1} transitionSpeed={2500} tiltReverse={true}>
             <img
-              src="https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+              src={broadimg}
               alt=""
             />
           </Tilt>
-          <p>Project Title</p>
+          <p>ซ่อมแผงวงจร</p>
         </div>
 
         <div className={styles.port_items}>
           <Tilt scale={1.1} transitionSpeed={2500} tiltReverse={true}>
-            <img
-              src="https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+          <img
+              src={cctvimg}
               alt=""
             />
           </Tilt>
-          <p>Project Title</p>
+          <p>ทำระบบ cctv</p>
         </div>
       </div>
     </div>

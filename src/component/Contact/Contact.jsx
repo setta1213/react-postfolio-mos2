@@ -8,17 +8,16 @@ function Contact() {
         <div className={styles.contact_info}>
           <h3> Get in Touch</h3>
           <p className={styles.contact_desc}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui,
-            beatae expedita. Impedit doloremque, amet aut excepturi sint veniam
-            officiis placeat, quas ipsam sunt, libero aspernatur possimus
-            voluptatum omnis. Quasi, neque!
+            Hello! I'm Mos. If you have any questions, would like to chat,
+            or are interested in hiring me, feel free to reach out. I'm always
+            happy to connect and help out however I can.
           </p>
           <p className={styles.contact_address}>
             123 Main Street <br />
             Bangkok, Thailand
           </p>
           <p>
-            <FaPhone /> (+66)98 555 1234
+            <FaPhone /> (+66)85 582 5562
           </p>
           <p>
             <FaEnvelope /> som78542@gmail.com

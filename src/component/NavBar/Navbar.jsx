@@ -2,55 +2,76 @@ import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { FaBars } from "react-icons/fa6";
 
-export default function Navbar() {
+export default function Navbar({
+  scrollToSkills,
+  scrollToService,
+  scrollToContact,
+}) {
   const [isToggled, setToggle] = useState(false);
+
   const handleToggle = () => {
-    setToggle(!isToggled); //
+    setToggle(!isToggled);
   };
   return (
     <nav>
       <div className={styles.container}>
         <div className={styles.nav_con}>
           <div className={styles.logo}>
-            <a href="#">Mos Port</a>
+            <a href="#">มอสครับ</a>
           </div>
           <ul>
             <li>
-              <a href="#">Skill</a>
+              <a href="#" onClick={scrollToSkills}>
+                ทักษะ
+              </a>
             </li>
             <li>
-              <a href="#">Protfolio</a>
+              <a href="#" onClick={scrollToService}>
+                ผลงาน
+              </a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#" onClick={scrollToContact}>
+                ติดต่อ
+              </a>
             </li>
           </ul>
           <div className={styles.button}>
-            <a href="#">Hire Me</a>
+            <a href="#" onClick={scrollToContact}>
+              จ้างผม
+            </a>
           </div>
         </div>
 
         <div>
-            {/* {moblie menu} */}
-            <FaBars className={styles.bars} onClick={handleToggle}/>
-            {isToggled ? (
-                <>
-                <ul className={styles.mobile_menu}>
-            <li>
-              <a href="#">Skill</a>
-            </li>
-            <li>
-              <a href="#">Protfolio</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-          <div className={styles.mobile_button}>
-            <a href="#">Hire Me</a>
-          </div>
-                </>
-            ):null}
+          {/* {moblie menu} */}
+          <FaBars className={styles.bars} onClick={handleToggle} />
+          {isToggled ? (
+            <>
+              <ul className={styles.mobile_menu}>
+                <li>
+                  <a href="#" onClick={scrollToSkills}>
+                    ทักษะ
+                  </a>
+                </li>
+                <li>
+                  <a href="#" onClick={scrollToService}>
+                    ผลงาน
+                  </a>
+                </li>
+                <li>
+                  <a href="#" onClick={scrollToContact}>
+                    ติดต่อ
+                  </a>
+                </li>
+              </ul>
+              <div className={styles.mobile_button}>
+                <a href="#" onClick={scrollToContact}>
+                  จ้างผม
+                </a>
+              </div>
+            </>
+          ) : null}
         </div>
       </div>
     </nav>
