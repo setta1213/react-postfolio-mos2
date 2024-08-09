@@ -17,7 +17,7 @@ export default function Navbar({
       <div className={styles.container}>
         <div className={styles.nav_con}>
           <div className={styles.logo}>
-            <a href="#">มอสครับdfdfdfdfdfdfdfdfdfdfdfdfdf</a>
+            <a href="#">มอสครับ</a>
           </div>
           <ul>
             <li>
